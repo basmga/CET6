@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为HTML5 -->
+<html lang="en">
+<!-- 根元素，设置文档的语言为英语 -->
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置文档的字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 设置视口，使页面在移动设备上也能良好显示 -->
+    <title>轻松背单词--CET6</title>
+    <!-- 设置页面的标题 -->
+</head>
+<link rel="stylesheet" href="view.css">
+<!-- 引入外部CSS文件，用于设置页面的样式 -->
+<script src="model.js"></script>
+<!-- 引入外部JavaScript文件，可能包含数据模型或业务逻辑 -->
+<body>
+    <header>
+        <p id="title"> 
+            CET6-都来给我狠狠的背！！！
+            <!-- 页面标题，鼓励用户背单词 -->
+        </p>
+        <span id='response'>
+            <!-- 用于显示响应信息，如操作结果 -->
+        </span>
+    </header>
+    <nav class="button-container">
+        <!-- 导航栏，包含多个按钮 -->
+        <button id="firstWord" class="small">开背单词</button>
+        <!-- 开始背单词的按钮 -->
+        <button id="nextWord" class="small">继续背词</button>
+        <!-- 继续背诵下一个单词的按钮 -->
+        <button id="lastWord" class="small">最后单词</button>
+        <!-- 直接跳转到最后一个单词的按钮 -->
+        <hr/>
+        <!-- 水平分割线 -->
+        <button id="saveWord" class="big">存储进度</button>
+        <!-- 保存当前学习进度的按钮 -->
+        <button id="reviewWord" class="big">复习单词</button>
+        <!-- 复习已学单词的按钮 -->
+    </nav>
+    <main>
+        <!-- 主要内容区域 -->
+        <p id="en"></p>
+        <!-- 显示英文单词的区域 -->
+        <span id ='level'>难度：</span>
+        <!-- 显示当前单词难度的标签 -->
+        <p id="pn"></p>
+        <!-- 可能用于显示单词的序号或其他信息 -->
+        <p id="cn1" class="cn"></p>
+        <p id="cn2" class="cn"></p>
+        <p id="cn3" class="cn"></p>
+        <p id="cn4" class="cn"></p>
+        <p id="cn5" class="cn"></p>
+        <!-- 显示单词的中文释义，可能有多个释义 -->
+        <hr/>
+        <!-- 水平分割线 -->
+        <p id="log"></p>    
+        <!-- 用于显示日志或操作记录的区域 -->
+    </main>
+    
+    <footer>
+        <!-- 页脚 -->
+        江西科技师范大学 汪熊锋 2024--2025
+        <!-- 页脚信息，包含作者姓名和年份 -->
+    </footer>
+    <form>
+        <!-- 表单，用于用户登录或注册 -->
+        <p>
+            请您登录
+        </p>
+        <p>用户：<input type="text" name="user"/></p>
+        <!-- 用户输入框 -->
+        <p>密码：<input type="password" name="pass" /></p>
+        <!-- 密码输入框 -->
+        <button id = "signIn">
+           注册
+        </button>
+        <!-- 注册按钮 -->
+        <button id = "loginIn">
+           登录
+        </button>
+        <!-- 登录按钮 -->
+    </form>
+   <script src="controller.js"></script>
+   <!-- 引入外部JavaScript文件，可能包含页面逻辑或事件处理 -->
+</body>
+</html>

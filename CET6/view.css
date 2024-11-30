@@ -1,0 +1,162 @@
+   *{
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+   body{
+     font-size: calc(10px+1vh);
+     height: 98vh ;    
+     position: relative;
+    }
+    header{font-size: 2em;
+           height: 15% ;
+           position: relative;
+    }
+    nav{ height: 10% ;}
+    nav button{
+        font-size: 1.2em;
+        border-radius: 10px;
+       }
+    button.small{
+        width: 30%;
+        padding: 0.1em 0.2em;  
+    }
+    button{
+        display: inline;
+        border: none;
+        background-color: black;
+        color:rgb(189, 162, 9);
+        transition: transform 0.3s ease;
+    }
+    button:hover{
+        transform: scale(1.1);
+        color:white;
+    }
+    button.big{
+        width: 30%;
+        padding: 0.1em 0.5em;  
+    }
+     
+    main{
+        margin-top: 1em;
+        font-size: 1.6em;
+        height: 60% ;
+        position: relative;
+    }
+    main p#en{
+        font-size: 1.6em;
+        color:lightblue;
+        text-shadow: 2px 2px gray ;
+    }
+    main p#pn{
+        font-size: 1.2em;
+        color:lightseagreen;
+       }
+   /* 定义表单的样式 */
+form {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    border: 2px solid; /* 边框初始颜色将在动画中定义 */
+    border-radius: 15px; /* 圆角半径 */
+    left: 5%;
+    top: 10%;
+      /* background-image: url('E:\CET6\CET6.jpg\QQ图片20220924143916.png'); 
+      background-size: cover; 
+      background-repeat: no-repeat;
+      background-position: center;  */
+    background-color: aqua;
+    font-size: 1.1em;
+    /* 添加动画来变换边框颜色 */
+    animation: borderColorChange 1s infinite alternate;
+}
+
+/* 定义边框颜色变换的动画 */
+@keyframes borderColorChange {
+    0% { border-color: red; }
+    100% { border-color: blue; }
+}
+
+
+/* 定义表单内输入元素的样式 */
+/* 定义表单内输入元素的默认样式 */
+form input {
+    font-size: 1.1em;
+    width: 6em;
+    border-radius: 5px; /* 圆角输入框 */
+    border: 1px solid #ccc; /* 默认边框颜色 */
+    transition: all 0.3s ease; /* 添加过渡效果，使样式变化更平滑 */
+}
+
+/* 定义输入框聚焦时的样式 */
+form input:focus {
+    /* 输入框变大（例如，宽度增加20%） */
+    width: calc(6em + 1em);
+    /* 字体变黑变粗 */
+    color: #000; /* 黑色字体 */
+    font-weight: bold; /* 粗体 */
+    /* 可选：改变边框颜色以突出显示 */
+    border-color: #007BFF; /* 蓝色边框 */
+    /* 可选：增加内阴影或外阴影以增强效果 */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 蓝色阴影 */
+}
+
+/* 定义表单内按钮的样式 */
+form button {
+    font-size: 1.3rem;
+    margin-right: 1em;
+    border-radius: 10px; /* 圆角按钮 */
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 定义鼠标悬停或输入时按钮的样式 */
+form button:hover,
+form input:focus + button { 
+    transform: scale(1.1); /* 按钮变大1.1倍 */
+}
+
+
+    footer{
+        height: 20% ;
+        font-size:1.2em;
+    }
+    span#level{
+        display: block;
+        position: absolute;
+        right:20px;
+        top:1px;
+        color:blue;
+        font-size: 0.5em;
+    }
+    p.cn{
+      border:1px solid blue ;
+      background-color: antiquewhite;
+      cursor: pointer;
+      font-size: 0.8em;
+      margin-bottom: 0.2em;
+    }
+    p.cn.right{
+      background-color: yellow;
+      color: red ;
+    }
+    p.cn.wrong{
+      background-color: gray;
+      color:white;
+    }
+    p.cn:hover{
+        color: blue ;
+    }
+    header span#response{
+        font-size: 0.8em;
+        color: red;
+        position: absolute;
+        right: 0.5em;
+        top:2em;
+    }
+    p#log{
+        background-color: gray;
+        color: white;
+        font-size: 0.65em;
+        padding: 5px 10px;
+        text-align: center;
+    }
